@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1 class="heading">Heading tag</h1>
+        <li>Study with mom ki meye,,,hahaha</li>
+        <li>Study with mom ki meye,,,hahaha</li>
+        <li>Study with mom ki meye,,,hahaha</li>
+        <li>Study with mom ki meye,,,hahaha</li>
+    </header>
+    <main id="main-container">
+        <section id="dom" class="large-text">
+            <h1 class="awsome">My Awsome Dom de baba</h1>
+            <ul>
+                <li>jalali set</li>
+                <li>shafayet</li>
+                <li>bonobash</li>
+                <li>Dom de re baba</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title" class="fruiter  fruit-name">Fruits I like</h1>
+            <ul class="fruits-con">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Please I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places" id="important-places">soondharbon</li>
+                <li class="important-places">bandhorbon</li>
+                <li class="important-places">katabon</li>
+                <li>salbon</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <!-- or -->
+    <script>
+        /*const student = {
+             name: 'hula',
+             ID: 11,
+             study: function(time){
+                 console.log(time, 'study kortece');
+             }
+        }*/
+        //option-1: getElementByTagName
+        //const allheadings = document. getElementsByName('h1');
+        /*for(const h1 of allHeadings){
+            console.log(h1.innerText);
+        }*/
+        // nidistto akta element k js a caile
+        //option-2
+        //const fruitsTitle = document.getElementById('fruits-title');
+        //fruitsTitle.innerText = 'fruits changed by js'
+        /*const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }*/
+        //elementbyclassname array hisabe dei onkgulo element dite hole class use korte hoy
+        //option-3
+        /*const places = document.getElementsByClassName('important-places');
+        for(const place of places){
+            console.log(place.innerText);
+        }*/
+        // css selector query
+        //const fruits = document.querySelectorAll('.fruits-con');
+        //sudu li element gulo caile
+        //option-4
+        /*const fruits = document.querySelectorAll('.fruits-con li')
+        for(const li of fruits){
+            console.log(li.innerText);
+        }*/
+        //option-5
+        //document.querySelector('.fruits-con li') //fast element dekhte
+        console.log('html script file');
+        //difference nodelist htmlCollection
+        //QuerySelector nodelist holo static,for each apply korte pari
+        //getElementByClassName HtmlCollection live link--connection live, for each apply korte pari na, for of use kora jabe
+
+        //style dite
+       // getElementById('fruits-title').style.backgroundColor = 'yellow'
+        //ki ki style dawa jabe dekhar jonno
+        //getElementById('fruits-title').style
+        //attribute-- id, class => name
+        /*const title = document.getElementById('fruits-title');
+        title.getAttribute('class');*/
+        //atrribute remove id, class
+        //title.classList.remove('fruiter')
+        //add
+        //title.classList.add('fruit-like')
+        //title add
+        //title.setAttribute('title', 'tooltip set by javascript');
+        //index
+        //document.getElementsByClassName('fruit-name')[0]
+
+       // document.getElementsByClassName('fruit-name')[0].innerHTML
+    </script>
+    <script src="append.js"></script>
+    <script src="styleInJs.js"></script>
+    
+</body>
+</html>
